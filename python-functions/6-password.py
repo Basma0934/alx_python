@@ -1,12 +1,16 @@
 def validate_password(password):
+    SpecialSymbol = ["@", "#", "$", " ", "&", "%"]
+    val = True 
+
     if len(password) < 8:  
-        return False  
-    if any(char.isupper() for char in password):
+        return False 
+    if not any(char.isupper() for char in password):
         return False
-    if any(char.islower() for char in password):
+    if not any(char.islower() for char in password):
         return False
-    if any(char.isdigit() for char in password):
+    if not any(char.isdigit() for char in password):
         return False
-
-
-    
+    if not any(char in SpecialSymbol for char in password):
+        return False
+    if val: 
+        return val 
