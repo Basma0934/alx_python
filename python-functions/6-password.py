@@ -10,7 +10,9 @@ def validate_password(password):
         return False
     if not any(char.isdigit() for char in password):
         return False
-    if not any(char in SpecialSymbol for char in password):
+    if " " not in password:
+        return True
+    else:
         return False
-    if val: 
-        return val 
+    if val:
+        return val
