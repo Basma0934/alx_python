@@ -2,6 +2,7 @@
 import requests
 
 request = requests.get('https://alu-intranet.hbtn.io/status')
+body = read()
 print("Body response:")
 print("\t- type: {}".format(type(body)))
 print("\t- content: {}".format(body))
