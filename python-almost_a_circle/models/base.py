@@ -1,6 +1,9 @@
+"""A Python file for Base"""
+
 class Base:
+
     """
-    Represents the base model
+    a Base class
     """
     __nb_objects = 0
     def __init__(self, id=None):
