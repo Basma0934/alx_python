@@ -1,17 +1,13 @@
-"""
-a python file for base
-"""
-
 class Base:
     """
-    a Base class
+    Represents the base model
     """
     __nb_objects = 0
     def __init__(self, id=None):
         """
-        init method
+        initialize a new Base
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects +=1
