@@ -1,9 +1,9 @@
-"""
-This module implements a Rectangle object that inherits from Base
-"""
+"""a python file for rectangle"""
+
 from models.base import Base
 
 class Rectangle(Base):
+      
       """A rectangle class"""
 
 def __init__(self, width, height, x=0, y=0, id=None):
